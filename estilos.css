@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: antiquewhite;
+    color: #333;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.logo-container {
+    flex: 1; /* El logo ocupará todo el espacio disponible a la izquierda */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: auto; /* Empuja el menú hacia la derecha */
+}
+
+nav li {
+    margin-right: 20px; /* Espacio entre los ítems del menú */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: auto;
+    height: 35px;
+    display: flex;
+}
+
+.news-bar {
+    background-color: #333;
+    color: antiquewhite;
+    margin: auto;
+    position: relative;
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 30px; /* Ajusta según la altura que quieras */
+}
+
+.news-text {
+    margin: 0; /* Elimina márgenes que podrían descentrar */
+}
+
+.news-text { margin-bottom: 7px; }
+
+
+@media all and (min-width: 900px) {
+	.news-bar { text-align: left; }
+	.news-inner {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 900px;
+	}
+	.news-text {
+		flex: 1;
+		margin-bottom: 0;
+	}
+}
+
+/* Estilos generales para el footer */
+footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Color de texto claro */
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Contenedor flexbox para alinear texto e imágenes horizontalmente */
+footer .footer-content {
+    display: flex; /* Cambia a flex para poder alinear los hijos */
+    flex-direction: column; /* Coloca el texto y las imágenes en columnas */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo del enlace principal al sitio */
+footer a {
+    color: antiquewhite; /* Color verde para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita para los enlaces */
+}
+
+/* Estilo de los enlaces cuando el mouse pasa por encima */
+footer a:hover {
+    color: antiquewhite; /* Color diferente en hover */
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Contenedor de los iconos de licencia, alineados en horizontal */
+footer .license-icons {
+    display: flex; /* Asegura que las imágenes estén en fila */
+    align-items: center; /* Alinea verticalmente las imágenes */
+    margin-top: 10px; /* Espacio entre el texto y las imágenes */
+}
+
+/* Estilo para las imágenes de licencia */
+footer .license-icons img {
+    height: 22px; /* Altura de las imágenes */
+    margin-left: 5px; /* Espacio entre las imágenes */
+}
+
+
+.title{
+    text-align: center;
+}
